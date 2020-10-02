@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+	<title>Enter Color Name </title>
+	<script src="angular.min.js"></script>
+	<style>
+		.name{
+			text-align: center;
+
+		     }
+		     input{
+		     	margin-top: 20%;
+
+		          }
+		          *{
+		          	text-transform: uppercase;
+		          }
+	</style>
+</head>
+<body ng-model="name" style="background-color: {{name}} ">
+
+    <div class="name">
+    	
+	<input type="text" ng-model="name">
+	<h1>Enter Colour Name to change the background color</h1>
+
+    </div>
+    <script type="text/javascript" src="F:\Programming Languages\jQuery\Jquery/jquery-3.4.1.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		function playslider(){
+        $('h1').fadeIn(800).delay(800).fadeOut(800);
+        $('h1').delay(1600).fadeIn(800).delay(800).fadeOut(800,playslider);
+}   
+playslider();
+    	});
+    </script>
+
+</body>
+</html>
